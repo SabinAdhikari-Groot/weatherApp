@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('bg.jpg');
+    background-size: 100% 100%;
+  }
+  
+  .container {
+    width: 400px;
+    height: 660px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgb(147, 208, 255);
+  }
+  .time{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px ;
+  }
+  #date {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  #clock {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: auto;
+  }
+  #location{
+    display: flex;
+    padding-top: 20px;
+    padding-left: 100px;
+    font-size: 30px;
+  }
+  .search-box {
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .search-box input {
+    width: 84%;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #000;
+    background-color: #ffffff;
+    padding: 12px 16px;
+    border-radius: 14px;
+    border: 1px solid #ccc;
+  }
+  
+  .search-box button {
+    width: 46px;
+    height: 46px;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-size: 20px;
+    color: #000000;
+    margin-left: 20px ;
+    border-radius: 15px;
+    width: 80px;
+  }
+  .search-box button:hover{
+    color: #fff;
+    background-color: #000000;
+  }
+  .weather-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 20px;
+    display: none;
+  }
+  
+  .weather-body img {
+    width: 50%;
+  }
+  
+  .weather-box {
+    margin-block: 20px;
+    text-align: center;
+  }
+  
+  .weather-box .temperature {
+    font-size: 40px;
+    font-weight: 800;
+    position: relative;
+    color: #000000;
+    sup {
+      font-size: 20px;
+      position: absolute;
+      font-weight: 600;
+      top: -5px;
+      right: -10px;
+    }
+  }
+  
+  .weather-box .description {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #000000;
+  }
+  
+  .weather-details {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+  
+  .pressure,
+  .humidity,
+  .wind {
+    display: flex;
+    align-items: center;
+  }
+  
+  .humidity {
+    margin-right: 25px;
+  }
+  
+  .wind {
+    margin-left: 25px;
+  }
+  .weather-details i {
+    font-size: 24px;
+    color: black;
+  }
+  
+  .weather-details .text {
+    margin-left: 5px;
+    font-size: 15px;
+    color: #000;
+  }
+  
+  .text span {
+    font-size: 15px;
+    font-weight: 700;
+    color: #000000;
+  }
